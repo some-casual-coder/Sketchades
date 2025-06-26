@@ -19,7 +19,7 @@ class Message {
     if (_id != null) 'id': _id,
     'from': from,
     'to': to,
-    'timestamp': timestamp.toIso8601String(),
+    'timestamp': timestamp,
     'contents': contents,
   };
 
@@ -28,7 +28,7 @@ class Message {
       id: json['id'] as String?,
       from: json['from'],
       to: json['to'],
-      timestamp: DateTime.parse(json['timestamp']),
+      timestamp: json['timestamp'],
       contents: json['contents'],
     );
   }

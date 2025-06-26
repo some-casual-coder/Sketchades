@@ -30,7 +30,7 @@ void main() {
     'username': 'nana',
     'photo_url': 'url',
     'active': true,
-    'last_seen': DateTime.now().toIso8601String(),
+    'last_seen': DateTime.now(),
   });
 
   final user2 = User.fromJson({
@@ -38,7 +38,7 @@ void main() {
     'username': 'nene',
     'photo_url': 'url',
     'active': true,
-    'last_seen': DateTime.now().toIso8601String(),
+    'last_seen': DateTime.now(),
   });
 
   test('sent msg successfully', () async {
